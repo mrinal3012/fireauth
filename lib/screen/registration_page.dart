@@ -1,3 +1,4 @@
+import 'package:fireauth/screen/login_page.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationPage extends StatefulWidget {
@@ -94,7 +95,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
               }, child: Text("Submit")),
               Spacer(),
               ElevatedButton(onPressed: () {
-
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginPage(),));
               }, child: Text("Skip")),
             ],),
             )

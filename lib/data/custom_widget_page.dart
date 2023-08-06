@@ -16,6 +16,13 @@ mystyleroboto(double size,[Color ? clr,FontWeight?fw]){
   );
 }
 
+class CountainerModel{
+  int ? hight;
+  String ? color;
+  CountainerModel({this.hight,this.color});
+}
+
+
 const Color textClrLight=Color(0xffFFFFFF);
 const Color textClrDart=Color(0xffA7A9AC);
 const Color textClrteal=Color(0xff006747);

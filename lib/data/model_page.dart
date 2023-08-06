@@ -7,7 +7,7 @@ class Model{
 List<Model> historyList =[
   Model(image: "images/profile.png",name: "Profile"),
   Model(image: "images/history.png",name: "Booking History"),
-  Model(image: "images/cancle.png",name: "Cancel Tickets"),
+  Model(image: "images/cancel.png",name: "Cancel Tickets"),
   Model(image: "images/booking.jpg",name: "All Booked Tickets"),
   Model(image: "images/custom.png",name: "Customer Support"),
   Model(image: "images/logout.png",name: "Logout"),
