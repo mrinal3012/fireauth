@@ -68,7 +68,9 @@ class _LoginPageState extends State<LoginPage> {
                                   prefixIcon: Icon(Icons.password_outlined),
                                   border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(5))),
-                            ))),
+                            ))
+
+                        ),
                       ],
                     )),
                   )),

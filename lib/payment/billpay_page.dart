@@ -8,8 +8,6 @@ import '../data/model_page.dart';
 class BillPayPage extends StatefulWidget {
   // const BillPayPage({Key? key}) : super(key: key);
 
-  // List<StationModel> modelList;
-  // BookSeatPage({required this.modelList});
   List<StationModel> modelList;
   BillPayPage({required this.modelList});
 
@@ -18,9 +16,13 @@ class BillPayPage extends StatefulWidget {
 }
 
 class _BillPayPageState extends State<BillPayPage> {
+  
+  List<StationModel> addticket=[];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Container(
@@ -88,7 +90,7 @@ class _BillPayPageState extends State<BillPayPage> {
                                             )),
                                       ],),
 
-                                      Text("Single ${widget.modelList[index].amount! * widget.modelList[index].count} .00 Rs|-",
+                                      Text("Total Amount ${widget.modelList[index].amount! * widget.modelList[index].count} .00 Rs|-",
                                           style:mystyleroboto(18,Colors.black,FontWeight.w500)
                                       )
                                     ],
@@ -97,7 +99,10 @@ class _BillPayPageState extends State<BillPayPage> {
                                 Expanded(child: Image.asset("images/qrcode.png"))
                               ],),
                               ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Color(0xff015281)),onPressed: () {
-                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => PaymentPage(),));
+                                
+                                addticket.add(widget.modelList[index]);
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context) =>PaymentPage(modelList: addticket),));
+                                
                               }, child: Text("Payment",style: mystyleroboto(18,Colors.black,FontWeight.w500)))
                             ],
                           ),

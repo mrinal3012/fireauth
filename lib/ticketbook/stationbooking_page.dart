@@ -46,10 +46,8 @@ class _StationBookingPageState extends State<StationBookingPage> {
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(backgroundColor: textClrteal),
                         onPressed: () {
-                          // addPerfume.add(perfumeValue[index]);
                           addTicketList.add(stationList[index]);
                           Navigator.of(context).push(MaterialPageRoute(builder: (context) => BillPayPage(modelList: addTicketList),));
-                          // Navigator.of(context).push(MaterialPageRoute(builder: (context) => BookSeatPage(modelList: addTicketList)));
                         }, child: Text("Book"))
                   ],),
                 )
