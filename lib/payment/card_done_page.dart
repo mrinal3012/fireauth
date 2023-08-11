@@ -80,8 +80,8 @@ class _CardDonePageState extends State<CardDonePage> {
                                         obscureText: isObscure,
                                         textInputAction: TextInputAction.next,
                                         decoration: InputDecoration(
-                                            hintText: "Input Account Number",
-                                            labelText: "Input Account Number",
+                                            hintText: "Input Bank Account Number",
+                                            labelText: "Input Bank Account Number",
                                             suffixIcon: IconButton(
                                                 onPressed: () {
                                                   setState(() {
