@@ -1,6 +1,8 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fireauth/data/custom_widget_page.dart';
 import 'package:flutter/material.dart';
 import '../data/model_page.dart';
+
 
 
 class CardDonePage extends StatefulWidget {
@@ -19,6 +21,7 @@ class _CardDonePageState extends State<CardDonePage> {
   bool isObscure = true;
   int value = 0;
   late int textValue;
+  CollectionReference userdata = FirebaseFirestore.instance.collection("userdata");
 
   // CollectionReference users = FirebaseFirestore.instance.collection('users');
 
@@ -151,23 +154,23 @@ class _CardDonePageState extends State<CardDonePage> {
                                 SizedBox(
                                   height: 50,
                                 ),
-                                // ElevatedButton(
-                                //     onPressed: () async {
-                                //       await users.add({
-                                //         'account': 12358,
-                                //         'token': 566852555,
-                                //       }).then((value) => print("users add"));
-                                //
-                                //       setState(() {
-                                //         value = 1;
-                                //       });
-                                //     },
-                                //     child: Text("Checkout"))
-                                ElevatedButton(onPressed: () {
-                                  setState(() {
-                                    value=1;
-                                  });
-                                }, child: Text("checkout"))
+                                ElevatedButton(
+                                    onPressed: () async {
+                                      await userdata.add({
+                                        'account': "bghhf",
+                                        'token': "fasdghf[2r",
+                                      }).then((value) => print("users add"));
+
+                                      // setState(() {
+                                      //   value = 1;
+                                      // });
+                                    },
+                                    child: Text("Checkout"))
+                                // ElevatedButton(onPressed: () {
+                                //   setState(() {
+                                //     value=1;
+                                //   });
+                                // }, child: Text("checkout"))
                               ],
                             ),
                           )
