@@ -1,4 +1,4 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'package:fireauth/data/custom_widget_page.dart';
 import 'package:flutter/material.dart';
 import '../data/model_page.dart';
@@ -21,7 +21,7 @@ class _CardDonePageState extends State<CardDonePage> {
   bool isObscure = true;
   int value = 0;
   late int textValue;
-  CollectionReference userdata = FirebaseFirestore.instance.collection("userdata");
+  // CollectionReference userdata = FirebaseFirestore.instance.collection("userdata");
 
   // CollectionReference users = FirebaseFirestore.instance.collection('users');
 
@@ -155,15 +155,15 @@ class _CardDonePageState extends State<CardDonePage> {
                                   height: 50,
                                 ),
                                 ElevatedButton(
-                                    onPressed: () async {
-                                      await userdata.add({
-                                        'account': "bghhf",
-                                        'token': "fasdghf[2r",
-                                      }).then((value) => print("users add"));
+                                    onPressed: () {
+                                      // await userdata.add({
+                                      //   'account': "bghhf",
+                                      //   'token': "fasdghf[2r",
+                                      // }).then((value) => print("users add"));
 
-                                      // setState(() {
-                                      //   value = 1;
-                                      // });
+                                      setState(() {
+                                        value = 1;
+                                      });
                                     },
                                     child: Text("Checkout"))
                                 // ElevatedButton(onPressed: () {
