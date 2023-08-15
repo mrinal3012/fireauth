@@ -165,7 +165,7 @@ class _CardDonePageState extends State<CardDonePage> {
                                         value = 1;
                                       });
                                     },
-                                    child: Text("Checkout"))
+                                    child: Text("CheckIn"))
                                 // ElevatedButton(onPressed: () {
                                 //   setState(() {
                                 //     value=1;
