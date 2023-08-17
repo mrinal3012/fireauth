@@ -31,11 +31,11 @@ class _CustomSupportPageState extends State<CustomSupportPage> {
               children: [
               Text("Email: metro@gmail.com",style: mystyleroboto(18,Colors.black,FontWeight.w700),),
               SizedBox(height: 10,),
-              Text("Phone: 123456789",style: mystyleroboto(18,Colors.black,FontWeight.w700),),
+              Text("Hot Line: 021 449 4336",style: mystyleroboto(18,Colors.black,FontWeight.w700),),
               SizedBox(height: 10,),
-              Text("Fax: +1-907-555-1234",style: mystyleroboto(18,Colors.black,FontWeight.w700),),
+              Text("Fax: 88-02-9353507",style: mystyleroboto(18,Colors.black,FontWeight.w700),),
               SizedBox(height: 10,),
-              Text("Office: Q9FJ+QCV, Begum Rokeya Avenue, Dhaka",style: mystyleroboto(18,Colors.black,FontWeight.w700),),
+              Text("Office:71, GARDEN, 72 Old Elephant Rd, Dhaka 1000",style: mystyleroboto(18,Colors.black,FontWeight.w700),),
             ],),),
           )
         ],)
