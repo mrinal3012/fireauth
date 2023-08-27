@@ -39,9 +39,9 @@ class _StationBookingPageState extends State<StationBookingPage> {
 
                 Spacer(),
                 Padding(
-                  padding: const EdgeInsets.all(5.0),
+                  padding: const EdgeInsets.all(2.0),
                   child: Row(children: [
-                    Text("Rs ${stationList![index].amount}",style:mystyleroboto(12,textClrteal,FontWeight.w800)),
+                    Text("Rs ${stationList![index].amount}",style:mystyleroboto(8,textClrteal,FontWeight.w800)),
                     Spacer(),
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(backgroundColor: textClrteal),

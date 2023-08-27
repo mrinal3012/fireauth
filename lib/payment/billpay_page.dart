@@ -52,12 +52,12 @@ class _BillPayPageState extends State<BillPayPage> {
                               Text("Ticket Number : ${widget.modelList[index].ticket}",
                                   style:mystyleroboto(18,Colors.black,FontWeight.w500)),
                               Row(children: [
-                                Expanded(child: Padding(
+                                Expanded( flex: 4, child: Padding(
                                   padding: const EdgeInsets.only(left: 20),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("${widget.modelList[index].firstStationName} To",style:mystyleroboto(18,Colors.black,FontWeight.w500)),
+                                      Text("${widget.modelList[index].firstStationName} \n To",style:mystyleroboto(18,Colors.black,FontWeight.w500)),
                                       Text("${widget.modelList[index].secondStationName}",style:mystyleroboto(18,Colors.black,FontWeight.w500)),
 
                                       Row(children: [
@@ -90,13 +90,13 @@ class _BillPayPageState extends State<BillPayPage> {
                                             )),
                                       ],),
 
-                                      Text("Total Amount ${widget.modelList[index].amount! * widget.modelList[index].count} .00 Rs|-",
+                                      Text("Total Amount\n ${widget.modelList[index].amount! * widget.modelList[index].count} .00 Rs|-",
                                           style:mystyleroboto(18,Colors.black,FontWeight.w500)
                                       )
                                     ],
                                   ),
                                 ),),
-                                Expanded(child: Image.asset("images/qrcode.png"))
+                                Expanded( flex: 3, child: Image.asset("images/qrcode.png"))
                               ],),
                               ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Color(0xff015281)),onPressed: () {
                                 

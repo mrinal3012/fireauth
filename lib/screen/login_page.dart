@@ -75,7 +75,7 @@ class _LoginPageState extends State<LoginPage> {
                     )),
                   )),
               Expanded(
-                  flex: 2,
+                  flex: 3,
                   child: Container(
                     child: Column(
                       children: [
@@ -99,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                                     onPressed: () {},
                                     child: Text("Forgot Password",
                                         style: mystyleroboto(
-                                            13,
+                                           13,
                                             Colors.black.withOpacity(.8),
                                             FontWeight.w700)))
                               ],
@@ -109,7 +109,7 @@ class _LoginPageState extends State<LoginPage> {
                             child: Center(
                               child: Padding(
                                 padding:
-                                    const EdgeInsets.symmetric(horizontal: 80),
+                                    const EdgeInsets.symmetric(horizontal: 50),
                                 child: Row(
                                   children: [
                                     Text("I dont have a account?",
